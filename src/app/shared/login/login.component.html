@@ -1,0 +1,5 @@
+<div>
+  <div> {{ (user | async)?.displayName }} </div>
+  <button (click)="login()" *ngIf="!(user | async)">Login</button>
+  <button (click)="logout()" *ngIf="(user | async)">Logout</button>
+</div>
