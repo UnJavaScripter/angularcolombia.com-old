@@ -1,28 +1,28 @@
-# AngularColombia
+# Angular Colombia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+Sitio web de la comunidad [https://www.meetup.com/Angular-Colombia/](1)
 
-## Development server
+## Roadmap
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O las características que debería tener el el futuro:
 
-## Code scaffolding
+- [ ] Autenticación con Firebase
+- [ ] Integración con API de Meetup
+- [ ] Sección mostrando resumen del siguiente evento
+- [ ] Registro para eventos
+- [ ] Encuestas
+- [ ] Integración con Bitpay
+- [ ] Propuesta de temas para charlas
+- [ ] Propuesta para speakers
+- [ ] Integración continua
+- [ ] ?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
-## Build
+## Desarrollo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Si quieres saber cómo iniciar el proyecto para aportar código, dale una leida al archivo `ANGULAR-CLI-README.md`.
 
-## Running unit tests
+Para instrucciones acerca de cómo aportar al proyecto puedes leer el archivo `CONTRIBUTING.md`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[1]: https://www.meetup.com/Angular-Colombia/
