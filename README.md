@@ -6,7 +6,7 @@ Sitio web de la comunidad [https://www.meetup.com/Angular-Colombia/](1)
 
 O las características que debería tener el el futuro:
 
-- [ ] Autenticación con Firebase
+- [X] Autenticación con Firebase
 - [ ] Integración con API de Meetup
 - [ ] Sección mostrando resumen del siguiente evento
 - [ ] Registro para eventos
