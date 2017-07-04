@@ -1,12 +1,12 @@
 # Angular Colombia
 
-Sitio web de la comunidad [https://www.meetup.com/Angular-Colombia/](1)
+Sitio web de la comunidad [https://www.meetup.com/Angular-Colombia/](1). Desplegado en https://angularcolombia.com
 
 ## Roadmap
 
 O las características que debería tener el el futuro:
 
-- [ ] Autenticación con Firebase
+- [X] Autenticación con Firebase
 - [ ] Integración con API de Meetup
 - [ ] Sección mostrando resumen del siguiente evento
 - [ ] Registro para eventos
@@ -20,9 +20,9 @@ O las características que debería tener el el futuro:
 
 ## Desarrollo
 
-Si quieres saber cómo iniciar el proyecto para aportar código, dale una leida al archivo `ANGULAR-CLI-README.md`.
+Si quieres saber cómo iniciar el proyecto para aportar código, dale una leida al archivo [`ANGULAR-CLI-README.md`.](./ANGULAR-CLI-README.md)
 
-Para instrucciones acerca de cómo aportar al proyecto puedes leer el archivo `CONTRIBUTING.md`
+Para instrucciones acerca de cómo aportar al proyecto puedes leer el archivo [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
 
 [1]: https://www.meetup.com/Angular-Colombia/
