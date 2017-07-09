@@ -1,7 +1,7 @@
 ## Tipo de issue
 
-- [] Tarea
-- [] Bug
+- [ ] Tarea
+- [ ] Bug
 
 ### Descripción
 
