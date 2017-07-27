@@ -1,5 +1,7 @@
-<div>
-  <div> {{ (user | async)?.displayName }} </div>
-  <button class="btn login" (click)="login()" *ngIf="!(user | async)">Login</button>
-  <button class="btn logout" (click)="logout()" *ngIf="(user | async)">Logout</button>
+<div class="login">
+  <div class="user-name" *ngIf="(_authService.isLoggin())"> Hola {{ (_authService.user)?.displayName }}</div>
+  <button md-raised-button color="accent" (click)="login()" *ngIf="!(_authService.isLoggin())">Login</button>
+  <button md-raised-button color="accent" (click)="logout()" *ngIf="(_authService.isLoggin())">Logout</button>
 </div>
+<!--<p>{{_authService.user.email }}</p>-->
+
