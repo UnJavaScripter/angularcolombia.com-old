@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
+import { MdButtonModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import 'hammerjs';
 
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
@@ -23,7 +25,8 @@ import { SharedModule } from './shared/shared.module';
     RoutingModule,
     AngularFireModule.initializeApp ( environment.firebase ),
     AngularFireAuthModule,
-    SharedModule
+    SharedModule,
+    MdButtonModule
   ],
   providers   : [ AuthGuard, AuthService ],
   bootstrap   : [ AppComponent ]
