@@ -1,29 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { environment } from '../environments/environment';
-
-import { RoutingModule } from './routing.module';
-import { SharedModule } from "./shared/shared.module";
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-@NgModule({
+import { RoutingModule } from './routing.module';
+import { AuthGuard } from './services/auth.guard';
+import { SharedModule } from './shared/shared.module';
+
+@NgModule ( {
   declarations: [
     AppComponent,
     HomeComponent
   ],
-  imports: [
+  imports     : [
     BrowserModule,
     RoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp ( environment.firebase ),
     AngularFireAuthModule,
     SharedModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+  providers   : [ AuthGuard ],
+  bootstrap   : [ AppComponent ]
+} )
+export class AppModule {
+}
