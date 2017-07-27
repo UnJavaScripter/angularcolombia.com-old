@@ -20,7 +20,7 @@ export class AuthService {
   login () {
     this.afAuth.auth.signInWithPopup ( new firebase.auth.GoogleAuthProvider () )
       .then ( ( data ) => {
-        this.user = data;
+        this.user = data.user;
         console.log ( this.user );
       } );
     // this.afAuth.auth.createUserWithEmailAndPassword(this.email, this.pass);
