@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MdButtonModule } from '@angular/material';
+import { MdButtonModule, MdToolbarModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AngularFireModule } from 'angularfire2';
@@ -26,7 +26,8 @@ import { SharedModule } from './shared/shared.module';
     AngularFireModule.initializeApp ( environment.firebase ),
     AngularFireAuthModule,
     SharedModule,
-    MdButtonModule
+    MdButtonModule,
+    MdToolbarModule
   ],
   providers   : [ AuthGuard, AuthService ],
   bootstrap   : [ AppComponent ]
