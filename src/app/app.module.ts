@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 
 import { RoutingModule } from './routing.module';
 import { AuthGuard } from './services/auth.guard';
+import { AuthService } from './services/auth.service';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule ( {
@@ -24,7 +25,7 @@ import { SharedModule } from './shared/shared.module';
     AngularFireAuthModule,
     SharedModule
   ],
-  providers   : [ AuthGuard ],
+  providers   : [ AuthGuard, AuthService ],
   bootstrap   : [ AppComponent ]
 } )
 export class AppModule {
